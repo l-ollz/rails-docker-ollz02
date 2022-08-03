@@ -33,6 +33,7 @@ jobs:
       - ruby/install-deps
       - run:
           name: Database setup
+          command: bundle install
           command: bundle exec rails db:migrate
       - run:
           name: test
